@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>교육 과정 안내</title>
+    <style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+            /* AWS 로고 배경 설정 (무료 이미지 호스팅 사용) */
+            background: url('https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg') no-repeat center center fixed;
+            background-size: 300px;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.95); /* 약간의 투명도 추가 */
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        /* 마우스 호버 시 흔들림 효과 */
+        .card:hover {
+            animation: shake 0.5s ease-in-out;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-2deg); }
+            75% { transform: rotate(2deg); }
+        }
+
+        h2 {
+            color: #232f3e; /* AWS 시그니처 컬러 계열 */
+            margin-bottom: 25px;
+            border-bottom: 2px solid #ff9900; /* AWS 오렌지 포인트 */
+            padding-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .info-item {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #636e72;
+            display: inline-block;
+            width: 100px;
+        }
+
+        .value {
+            color: #2d3436;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>교육 과정 안내</h2>
+        
+        <div class="info-item">
+            <span class="label">사업명</span>
+            <span class="value">부산정보산업인력육성사업</span>
+        </div>
+        <div class="info-item">
+            <span class="label">과정명</span>
+            <span class="value">AI로 완성하는 하이브리드 클라우드 아키텍쳐 엔지니어 양성 과정</span>
+        </div>
+        <div class="info-item">
+            <span class="label">교육기간</span>
+            <span class="value">2026년 6월 26일 ~ 2026년 12월 23일 (120일)</span>
+        </div>
+        <div class="info-item">
+            <span class="label">강사</span>
+            <span class="value">신중진</span>
+        </div>
+    </div>
+
+</body>
+</html>
